@@ -1,0 +1,30 @@
+mutation {
+  createSensorPayload(data: {
+    type: "publish"
+    latitude: 41.887436
+    longitude: -87.63327
+    accuracy: 892
+    altitude: 0
+    fixQuality: 0
+    velocity: 0
+    usingCellularLocation: 1
+    motionTriggered: 0
+    satellites: 0
+    batteryVoltage: 4.015
+    batteryPercentCharge: 81.890625
+    batteryAlert: 0
+    cellSignalStrength: -61
+    cellQuality: 37
+    temperatureF: 42.021973
+    rangeInInches: 24
+    x: 112
+    y: -96
+    z: 7872
+  }) {
+    id
+    latitude
+    longitude
+    createdAt
+    updatedAt
+  }
+}

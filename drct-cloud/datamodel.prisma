@@ -1,0 +1,27 @@
+type SensorPayload {
+  id: ID! @id
+  deviceId: String
+  type: String!
+  timestamp: DateTime
+  latitude: Float!
+  longitude: Float!
+  accuracy: Int!
+  altitude: Int!
+  fixQuality: Int!
+  velocity: Int!
+  usingCellularLocation: Int!
+  motionTriggered: Int!
+  satellites: Int!
+  batteryVoltage: Float!
+  batteryPercentCharge: Float!
+  batteryAlert: Int!
+  cellSignalStrength: Int!
+  cellQuality: Int!
+  temperatureF: Float!
+  rangeInInches: Int!
+  x: Int!
+  y: Int!
+  z: Int!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}

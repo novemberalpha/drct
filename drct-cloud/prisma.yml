@@ -1,0 +1,10 @@
+endpoint: https://drct-31ff09c0f3.herokuapp.com/drct-cloud/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: javascript-client
+    output: ./generated/prisma-client/
+
+hooks:
+  post-deploy:
+    - prisma generate
